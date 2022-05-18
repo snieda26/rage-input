@@ -8,6 +8,6 @@ const thumb = document.querySelector(".thumb");
 
 input.oninput = () => {
     let sliderValue = input.value;
-    thumb.style.left = sliderValue + '%';
-    bar.style.width = sliderValue + '%';
+    thumb.style.left = sliderValue * 10 + '%';
+    bar.style.width = sliderValue * 10 + '%';
 }
